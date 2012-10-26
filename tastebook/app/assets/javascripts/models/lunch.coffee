@@ -1,0 +1,1 @@
+class window.TasteBookApp.Lunch extends Backbone.Model
