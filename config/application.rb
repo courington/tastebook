@@ -66,10 +66,10 @@ module TastesApp
     config.assets.version = '1.0'
 
     # Add YUI-Compressor for CSS compression
-    # config.assets.css_compressor = :yui
+    config.assets.css_compressor = :yui
 
     # Use Uglifier for JS compression
-    # config.assets.js_compressor = :uglifier
-    
+    config.assets.js_compressor = :uglifier
+
   end
 end
