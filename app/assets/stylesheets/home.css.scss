@@ -12,25 +12,21 @@ section {
 		// -webkit-border-image: url('border-image-1544x1126.png') 5% repeat;
 		// border-image: url('border-image-1544x1126.png') 5% repeat;
 	}
-	header {
-		&.row {
+	header.row {
 			text-align: center;
 			margin-bottom: 20px;
 			margin-left: 0;
-		}
 		h1 {
 			background: url('title-tasteBook-161x28.png') no-repeat 0 0;
 			height: 28px;
 			width: 161px;
 			text-indent: -9999px;
-			margin: 0 auto 30px;
+			margin: 0 auto 50px;
 		}
 	}
-	article {
-		&.row {
+	article.row {
 			width: 1024px;
 			margin: 0 auto;
-		}
 		ul.span3 {
 			width: 30%;
 			margin: 0 1.5%;
@@ -39,18 +35,31 @@ section {
 			}
 		}
 	}
-	footer {
-		display: block;
-		clear: both;
+	footer.row {
+		width: 205px;
+		margin: 20px auto;
 		nav {
 			width: 100%;
 			margin: 0 auto;
-			ul {
-				li {
-					text-align: center;
-					display: inline-block;
-				}
-			}
+			overflow: auto;
 		}
+		ul {
+			width: 50%;
+			margin: 0 auto;
+			overflow: auto;
+		}
+		li {
+			width: 15%;
+			text-align: center;
+			display: inline-block;
+			a {
+				display: inline-block;
+				text-indent: -9999px;
+				background: black;
+				height: 10px;
+				width: 10px;
+				border-radius: 100%;
+			}
+		} 
 	}
 }
