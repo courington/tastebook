@@ -3,4 +3,16 @@
 $inner-bg: rgb(235,224,212);
 $card-main: rgb(246,244,240);
 $card-focus: rgb(247,235,203);
+$secondary-color: rgb(112,145,46);
 	//RGBA
+
+//LAYOUT
+[class*="pull_"] {
+	display: inline-block;
+}
+.pull_left {
+	float: left;
+}
+.pull_right {
+	float: right;
+}

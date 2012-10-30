@@ -2,8 +2,9 @@
 @import "resets";
 //TWITTER BOOTSTRAP
 @import "bootstrap";
-@import "bootstrap-responsive";
+// @import "bootstrap-responsive";
 //SASS ASSETS *variables, mixins, etc.
 @import "scss-assets";
 //PAGE SYTLES
 @import "home";
+@import "taste-card";

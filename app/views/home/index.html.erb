@@ -1,57 +1,53 @@
 <section class="container">
 
 <!-- HEADER FOR TITLE AND TOGGLE NAV -->
-	<header>
+	<header class="row">
 		<h1>Taste Book</h1>
-
-		<nav>
-			<%= link_to "List"%>
-			<%= link_to "Maps"%>
-		</nav>
+		<%= link_to "New Tastes", {}, class: "btn btn-inverse" %>
 	</header>
 
 <!-- WRAP THE MAIN CONTENT AREA -->
-	<article>
+	<article class="row">
 <!-- COLUMN 1 -->
 		<ul class="span3">
 			<li>
-				*This is Column1 Row1 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 			<li>
-				*This is Column1 Row2 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 			<li>
-				*This is Column1 Row3 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 		</ul>
 <!-- COLUMN 2 -->
 		<ul class="span3">
 			<li>
-				*This is Column2 Row1 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 			<li>
-				*This is Column2 Row2 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 			<li>
-				*This is Column2 Row2 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 		</ul>
 <!-- COLUMN 3 -->
 		<ul class="span3">
 			<li>
-				*This is Column3 Row1 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 			<li>
-				*This is Column3 Row2 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 			<li>
-				*This is Column3 Row3 Taste Book Card
+				<%= render :partial => "card" %>
 			</li>
 		</ul>
 	</article>
 
 <!-- FOOTER TO WRAP PAGINATION NAV -->
-	<footer>
+	<footer class="row">
 		<nav>
 			<ul>
 				<li><%= link_to "page2" %></li>

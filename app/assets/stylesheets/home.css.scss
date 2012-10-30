@@ -1,18 +1,41 @@
+body {
+	background: $inner-bg url('background-paper-128x128.png') repeat 0 0;
+}
 section {
 	&.container {
-			background: $inner-bg url('background-paper-128x128.png') repeat 0 0;
-			border: 3em solid;
-			-moz-border-image: url('border-image-1544x1126.png') 5% repeat;
-			-webkit-border-image: url('border-image-1544x1126.png') 5% repeat;
-			border-image: url('border-image-1544x1126.png') 5% repeat;
+		background: url('background-book-1440x1080.jpg') no-repeat 0 0;
+		width: 1440px;
+		height: 1080px;
+		padding-top: 100px;
+		// border: 3em solid;
+		// -moz-border-image: url('border-image-1544x1126.png') 5% repeat;
+		// -webkit-border-image: url('border-image-1544x1126.png') 5% repeat;
+		// border-image: url('border-image-1544x1126.png') 5% repeat;
+	}
+	header {
+		&.row {
+			text-align: center;
+			margin-bottom: 20px;
+			margin-left: 0;
+		}
+		h1 {
+			background: url('title-tasteBook-161x28.png') no-repeat 0 0;
+			height: 28px;
+			width: 161px;
+			text-indent: -9999px;
+			margin: 0 auto 30px;
+		}
 	}
 	article {
+		&.row {
+			width: 1024px;
+			margin: 0 auto;
+		}
 		ul.span3 {
-			margin: 0 14px;
+			width: 30%;
+			margin: 0 1.5%;
 			li {
-				height: 200px;
 				margin: 30px auto;
-				background: $card-main;
 			}
 		}
 	}
@@ -27,15 +50,6 @@ section {
 					text-align: center;
 					display: inline-block;
 				}
-			}
-		}
-	}
-}
-@media screen and (min-width: 500px){
-	section {
-		footer {
-			nav {
-				width: 50%;
 			}
 		}
 	}
