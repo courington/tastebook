@@ -12,11 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//
 //= require modernizr-custom
-//= require hamlcoffee
-//= require underscore
-//= require backbone
-//
-//
+//= require home
 //= require_tree .
