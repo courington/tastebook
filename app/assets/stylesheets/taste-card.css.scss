@@ -1,28 +1,47 @@
 .taste-card {
 	background: $card-main;
-	border-radius: 6px;
-	box-shadow: 0 1px 3px 1px rgba(0,0,10,.1);
+	@include tranny;
+	cursor: pointer;
+	@include border-radius;
+	@include well-shadow;
 	overflow: auto;
+	&:hover {
+		background: $card-focus;
+		margin-top: -3px;
+		margin-bottom: 3px;
+	}
 	.taste-photo {
-		width: 160px;
-		height: 160px;
+		width: 140px;
+		height: 140px;
 		margin: .825em;
 		overflow: hidden;
+		-webkit-border-radius: 3px;
 		border-radius: 3px;
 		display: inline-block;
+		border: 1px solid rgb(140, 140, 140);
 	}
 	dl {
 		display: inline-block;
 		margin: .825em;
+		width: 113px;
 		dt {
 			width: 44px;
 			height: 44px;
 			overflow: hidden;
-			border-radius: 100%;
-			text-align: right;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			float: right;
 		}
 		dd {
-			margin: 5px 0;
+			margin: 10px 0;
+			text-align: right;
+			clear: right;
+			p:last-child {
+				//font-size: 10px;
+			}
+			span {
+				display: block;
+			}
 		}
 	}
 }

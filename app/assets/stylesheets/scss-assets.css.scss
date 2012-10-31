@@ -16,3 +16,18 @@ $secondary-color: rgb(112,145,46);
 .pull_right {
 	float: right;
 }
+@mixin well-shadow {
+	-webkit-box-shadow: 0 1px 3px 1px rgba(0,0,10,.1);
+	box-shadow: 0 1px 3px 1px rgba(0,0,10,.1);
+}
+@mixin border-radius {
+	-webkit-border-radius: 6px;
+		border-radius: 6px;
+}
+@mixin tranny {
+	-o-transition: ease all .4s;
+	-ms-transition: ease all .4s;
+	-moz-transition: ease all .4s;
+	-webkit-transition: ease all .4s;
+	transition: ease all .4s;
+}
